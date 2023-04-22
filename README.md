@@ -2,14 +2,14 @@ La documentazione sarà suddivisa nei capitoli delle slide fornite del professor
 
 # Indice
 * [Introduzione](#introduzione)
-* [Modello relazionale](/modello-relazionale)
+* [Modello relazionale](/modello-relazionale.md)
 
 
 
 # Introduzione
 
 ## `Cosa è una base di dati?`
-Una base di dati è l'insieme di informazioni associao a collezioni di dati:
+Una base di dati è l'insieme di informazioni associato a collezioni di dati:
 * tra loro collegati
 * dotati di una descrizione
 
@@ -71,3 +71,6 @@ dati
     - Il DBMS dispone di funzionalità per il ripristino della base di dait in caso di malfunzionamento o guasti durante l'esecuzione di [transizioni](#transazioni)
 * **Sicurezza**
     - Prevenzione dall’accesso ai dati ad utenti non autorizzati
+
+
+[Torna all'indice](#indice)
