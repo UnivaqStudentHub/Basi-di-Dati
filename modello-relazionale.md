@@ -128,13 +128,33 @@ meccanismo che permetta di associare dati
 presenti in una tabella con quelli di un’altra 
 tabella 
 
-2 Importatnti definizioni:
+2 importanti definizioni:
 
-* **Chiave riferita**
-    - Si trova nella tabella principale
-* **Chiave referente**
-    - Si trova nella tabella in cui è presente il riferimento alla tabella principale
+* **Tabella riferita**
+    - Qui è presente la `chiave primaria`, questa tabella viene "indicara" tramite chiave esterna nelle **tabelle referenti**
+* **Tabella referente**
+    - Qui è presente la `chiave esterna` che va a "indicare" la tabella principale
 
->Esempio:
+>P.S il concetto di "indicare" è una astrazione per capire meglio, non si riferisce ai puntatori, le due tabelle non sono legate da nessun vincolo di memoria e puntatori tra di loro 
+
+>Esempio più intuitivo:
 >![](/img/vincoli_inter_relazionali.png)
 
+>Esempio di sintassi:
+>
+>`STUDENTI(matricola,nome,cognome,indirizzo)` "matricola" chiave primaria
+> 
+>`CORSI(codice,corso)` "codice" chiave primaria
+>
+>`CARRIERE(MatStudente: STUDENTI, CodiceCorso: CORSI,Data, Voto)`
+>
+>`MatStudente` e `CodiceCorso` sono le due chiavi esterne nella tabella referente di nome `CARRIERE` e sono anche le chiavi primarie della stessa tabella
+
+
+
+
+
+
+[Torna all'indice](#indice)
+
+[Torna alla Home](/README.md)

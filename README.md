@@ -3,6 +3,7 @@ La documentazione sarà suddivisa nei capitoli delle slide fornite del professor
 # Indice
 * [Introduzione](#introduzione)
 * [Modello relazionale](/modello-relazionale.md)
+* [Algebra relazionale](/algebra-relazionale.md)
 
 
 
