@@ -8,13 +8,19 @@
 # Indice
 * [Operatori](#operatori)
 * [Unione](#unione)
+* [Intersezione](#intersezione)
+* [Differenza](#differenza)
+* [Ridenominazione](#ridenominazione)
+* [Selezione](#selezione)
+* [Proiezione](#proiezione)
+* [Selezione e Proiezione](#selezione-e-proiezione)
+* [Join](#join)
 
 ## `Operatori`
 * [Unione](#unione) `∪`, [intersezione](#intersezione) `∩`, [differenza](#differenza) `-`
 * [Ridenominazione](#ridenominazione) `<--`
 * [Selezione](#selezione) `σ`
 * [Proiezione](#proiezione) `π`
-* [Selezione e Proiezione](#selezione-e-proiezione)
 * [Join](#join) `JOIN`
 
 
