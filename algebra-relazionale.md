@@ -124,10 +124,10 @@ Possiamo combinare selezione e proiezione in un'unica operazione, estraendo dall
 * Lo indichiamo con `JOIN`
 * Il grado della relazione ottenuta come risultato di un join è minore o uguale della somma dei gradi dei due operandi
 * Esistono **i seguenti tipi di join**:
-    1. Join naturale
-    2. Join esterno
-    3. Theta-join
-    4. Equi-join
+    1. [Join naturale](#join-naturale)
+    2. [Join esterno](#join-esterno)
+    3. [Theta-join](#theta-join)
+    4. [Equi-join](#equi-join)
 
 #### `Join naturale`
 Sintassi:
