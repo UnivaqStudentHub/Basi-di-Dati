@@ -28,6 +28,7 @@
 Unisce le due tabelle senza duplicare le tuple ( righe della tabella)
 
 > Esempio:
+>
 > ![](/img/unione.png)
 
 ## `Intersezione`
@@ -41,6 +42,7 @@ Restituisce le tuple che sono presenti in entrambe le tabelle, cioè le righe ch
 Restituisce le tuple che sono presenti nella prima tabella ma non nella seconda. Da un altro punto di vista potremmo dire che fa la vera e propria sottrazione, togliendo alla **prima** tabella le tuple che sono presenti nella **seconda**
 
 > Esempio:
+>
 > ![](/img/differenza.png)
 
 
@@ -59,12 +61,14 @@ Sintassi:
 
 
 > Esempio:
+>
 > ![](/img/ridenominazione.png)
 > Dopo fatto ciò, avendo due tabelle con gli stessi nomi di attributi potremmo fare operazioni come l'intersezione, la differenza e l'unione
 
 Possiamo fare anche ridenominazioni multiple, cioè cambiare più attributi alla volta
 
 > Esempio:
+>
 > ![](/img/ridenominazione_multipla.png)
 
 ## `Selezione`
@@ -80,6 +84,7 @@ Possiamo fare anche ridenominazioni multiple, cioè cambiare più attributi alla
 
 
 > Esempio:
+>
 >```sql
 >σ stipendio>50 ( Impiegati )
 >```
@@ -87,11 +92,13 @@ Possiamo fare anche ridenominazioni multiple, cioè cambiare più attributi alla
 Si possono anche utilizzare più condizioni, in questo caso le condizioni vengono concatenate con l'operatore `AND`
 
 > Esempio:
+>
 >```sql
 >σ stipendio>50 AND nome='Mario' ( Impiegati )
 >```
 
 >Esempio:
+>
 >![](img/selezione.png)
 
 ## `Proiezione`
@@ -106,12 +113,15 @@ Si possono anche utilizzare più condizioni, in questo caso le condizioni vengon
 
 
 > Esempio:
+>
 >```sql
 >π nome, stipendio ( Impiegati )
 >```
+>
 > Qui abbiamo selezionato solo le colonne nome e stipendio
 
 > Esempio:
+>
 >![](img/proiezione.png)
 
 
@@ -119,9 +129,11 @@ Si possono anche utilizzare più condizioni, in questo caso le condizioni vengon
 Possiamo combinare selezione e proiezione in un'unica operazione, estraendo dalla tabella i dati che ci interessano
 
 > Esempio:
+>
 >```sql
 >π nome, stipendio ( σ stipendio>50 ( Impiegati ) )
 >```
+>
 > Qui abbiamo selezionato le righe con uno stipendio maggiore di 50 e poi abbiamo selezionato solo le colonne nome e stipendio
 >
 >Quindi si legge dall'interno delle parentesi verso l'esterno
@@ -151,6 +163,7 @@ Il `join naturale` potrebbe avere degli **"effetti collaterali"** come otterener
     - per mancanza di valori uguali negli attributi comuni
 
 >Esempi:
+>
 >![](/img/join_non_completo_vuoto.png)
 #### `Join esterno`
 
@@ -168,7 +181,9 @@ Facendo il join esterno possiamo avere 3 tipi di join:
 * ***Sinistro*** (Left)
     - Mantiene tutte le righe della `tabella sinistra` e ci estende quelle della `tabella destra` che hanno valori uguali sugli attributi comuni. Se nella tabella di destra non ci sono valori uguali, viene inserito `NULL` al posto dei valori
     - > Esempio di `join sinistro`:
+        >
         > ![](/img/join_left.png)
+        >
         > **`Reparto` è l'attributo comune**
         > * In **Arancione** abbiamo i valori presenti negli attributi comuni nella `tabella destra`. Essendo che non hanno corrispondenze nella `tabella sinistra` l'intera riga non viene inserita nella join
         > * In **Azzurro** abbiamo una riga all'interno della `tabella sinistra` che non ha valori uguali negli attributi comuni, quindi viene inserito `NULL` al posto dei valori
@@ -176,7 +191,9 @@ Facendo il join esterno possiamo avere 3 tipi di join:
 * ***Destro*** (Right)
     - Mantiene tutte le righe della `tabella destra` e ci estende quelle della `tabella sinistra` che hanno valori uguali sugli attributi comuni. Se nella tabella di sinistra non ci sono valori uguali, viene inserito `NULL` al posto dei valori
     - > Esempio di `join destro`:
-       > ![](/img/join_right.png)
+        >
+        > ![](/img/join_right.png)
+        >
         > **`Reparto` è l'attributo comune**
         > * In **Arancione** abbiamo i valori presenti negli attributi comuni nella `tabella sinistra`. Essendo che non hanno corrispondenze nella `tabella destra` l'intera riga non viene inserita nella join
         > * In **Azzurro** abbiamo una riga all'interno della `tabella destra` che non ha valori uguali negli attributi comuni, quindi viene inserito `NULL` al posto dei valori
@@ -184,7 +201,9 @@ Facendo il join esterno possiamo avere 3 tipi di join:
 * ***Completo*** (Full)
     - Mantiene le righe di entrambe le tabelle, collegandole per valori uguali negli attributi comuni. Se non ci sono valori uguali, viene inserito `NULL` al posto dei valori
     - > Esempio di `join completo`:
+        >
         > ![](/img/join_full.png)
+        >
         > **`Reparto` è l'attributo comune**
         > * In **Azzurro** abbiamo le righe della `tabella sinistra` e della `tabella destra` le quali non hanno valori uguali negli attributi comuni, quindi viene inserito `NULL` al posto dei valori nella tabella di join
         > * **In poche parole nella tabella di join sono presenti tutte le righe ( tuple ) della `tabella sinistra` e della `tabella destra` con in aggiunta le relazioni con l'altra tabella (se esistenti, sennò NULL)**
@@ -202,6 +221,7 @@ Sintassi:
 --> La condizione sarà sempre di uguaglianza
 ```
 > Esempio:
+>
 >![](/img/equi_join.png)
 >
 > Si uniscono le righe con valori uguali negli attributi comuni, in questo caso il `reparto` e il `codice` devono essere uguali
