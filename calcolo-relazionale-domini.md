@@ -1,4 +1,4 @@
-# Calcolo relazionale
+# Calcolo relazionale su domini
 
 Sintassi:
 

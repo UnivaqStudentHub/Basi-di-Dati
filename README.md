@@ -4,7 +4,8 @@ La documentazione sarà suddivisa nei capitoli delle slide fornite del professor
 * [Introduzione](#introduzione)
 * [Modello relazionale](/modello-relazionale.md)
 * [Algebra relazionale](/algebra-relazionale.md)
-* [Calcolo relazionale](/calcolo-relazionale.md)
+* [Calcolo relazionale su domini](/calcolo-relazionale-domini.md)
+* [Calcolo relazionale su ennuple](/calcolo-relazionale-ennuple.md)
 
 
 
