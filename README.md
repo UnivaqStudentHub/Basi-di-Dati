@@ -6,6 +6,7 @@ La documentazione sarà suddivisa nei capitoli delle slide fornite del professor
 * [Algebra relazionale](/algebra-relazionale.md)
 * [Calcolo relazionale su domini](/calcolo-relazionale-domini.md)
 * [Calcolo relazionale su ennuple](/calcolo-relazionale-ennuple.md)
+* [Normalizzazione](/normalizzazione.md)
 
 
 
