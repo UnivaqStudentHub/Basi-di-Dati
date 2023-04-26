@@ -4,6 +4,7 @@
 # Indice 
 * [Definizione](#definizione)
 * [Causa delle anomalie](#causa-delle-anomalie)
+* [Dipendenze funzionali](#dipendenze-funzionali)
 * [Forme normali](#forme-normali)
 
 
@@ -31,6 +32,29 @@ La **fusione di concetti disomogenei** in una relazione comporta:
 * `Anomalie di inserimento`
     - per inserire una tupla si devono inserire tutti i dati, anche quelli che non sono ancora disponibili
 
+## Dipendenze funzionali (DF)
+Sintassi:
+
+`Y -> Z`
+
+Si legge: 
+* **Y determina Z**
+* **Z dipende funzionalmente da Y**
+
+> Esempio:
+> ![](/img/esempio_dipendenza.png)
+>
+>* `Impiegato -> Stipendio`
+>   - Ogni impiegato ha un solo stipendio
+>   - **Stipendio** dipende da **Impiegato**
+>* `Progetto -> Bilancio`
+>   - Ogni progetto ha un bilancio
+>   - **Bilancio** dipende da **Progetto**
+>* `Impiegato Progetto -> Funzione`
+>   - Ogni impiegato ha una funzione per ciascun progetto
+>   - **Funzione** dipende da **Impiegato** e **Progetto**
+
+
 
 ## Forme normali
 
@@ -38,8 +62,14 @@ La **fusione di concetti disomogenei** in una relazione comporta:
 È in **prima forma normale** quando non sono presenti:
 * `Attributi multivalore`
     - attributi che possono assumere più valori per ogni tupla
-* `Attributi composti`
+* `Attributi strutturati`
     - attributi che possono essere scomposti in sotto-attributi
+
+> Esempio:
+> ![](/img/1fn.png)
+>
+> * `Progetti` è un attributo multivalore
+> * `Indirizzo` è un attributo strutturato
 
 #### Seconda forma normale (2FN)
 
