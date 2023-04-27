@@ -66,6 +66,7 @@ Si legge:
     - attributi che possono essere scomposti in sotto-attributi
 
 > Esempio:
+>
 > ![](/img/1fn.png)
 >
 > * `Progetti` è un attributo multivalore
