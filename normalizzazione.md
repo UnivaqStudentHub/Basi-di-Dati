@@ -3,6 +3,7 @@
 
 # Indice 
 * [Definizione](#definizione)
+* [Chiavi e attributi](#chiavi-e-attributi)
 * [Causa delle anomalie](#causa-delle-anomalie)
 * [Dipendenze funzionali](#dipendenze-funzionali)
 * [Forme normali](#forme-normali)
@@ -17,6 +18,15 @@ La **forma normale** è una proprietà che deve essere soddisfatta dai valori de
 ***Uno schema non è normalizzato quando:***
 * sono presenti ridondanze
 * crea difficoltà nelle operazioni di aggiornamento
+
+***Definiamo `R(x)` uno schema di relazione***
+
+
+## Chiavi e attributi
+* **Attributo primo**
+    - attributo che fa parte della chiave primaria
+* **Attributo non primo**
+    - attributo che NON fa parte della chiave primaria
 
 ## Causa delle anomalie
 
@@ -59,7 +69,7 @@ Si legge:
 ## Forme normali
 
 #### Prima forma normale (1FN)
-È in **prima forma normale** quando non sono presenti:
+È in **prima forma normale** quando NON sono presenti:
 * `Attributi multivalore`
     - attributi che possono assumere più valori per ogni tupla
 * `Attributi strutturati`
@@ -73,7 +83,7 @@ Si legge:
 > * `Indirizzo` è un attributo strutturato
 
 #### Seconda forma normale (2FN)
-
+* se è in **prima forma normale (1FN)**
 
 
 
