@@ -7,6 +7,7 @@
 * [Causa delle anomalie](#causa-delle-anomalie)
 * [Dipendenze funzionali](#dipendenze-funzionali)
 * [Forme normali](#forme-normali)
+* [Decomposizione](#decomposizione)
 
 
 
@@ -68,7 +69,7 @@ Si legge:
 
 ## Forme normali
 
-#### Prima forma normale (1FN)
+### Prima forma normale (1FN)
 È in **prima forma normale** quando NON sono presenti:
 * `Attributi multivalore`
     - attributi che possono assumere più valori per ogni tupla
@@ -82,11 +83,38 @@ Si legge:
 > * `Progetti` è un attributo multivalore
 > * `Indirizzo` è un attributo strutturato
 
-#### Seconda forma normale (2FN)
-* se è in **prima forma normale (1FN)**
+### Seconda forma normale (2FN)
+
+Uno schema di relazione è in **2FN** se:
+* è in **prima forma normale (1FN)**
+* Ogni [attributo non primo](#chiavi-e-attributi) dipende completamente da ogni chiave di R(X)
+
+> Esempio:
+> ![](/img/2fn.png)
+>
+>*  **Città** dipende dall'**Articolo** e dal **Magazzino**, che sono le chiavi primarie
+>   - `{Articolo,Magazzino} -> Città`
+> * **Città** dipende dal **Magazzino**
+>   - `Magazzino -> Città`
+>
+> Essendo che la `Città` in poche parola reppresenta **dove è locato** il `Magazzino` lo possiamo togliere dalla tabella e creare una nuova tabella come qui di seguito:
+> ![](img/2fn_vero.png)
 
 
+## Decomposizione
+La decomposizione deve avvenire sempre in modo tale che le nuove tabella che vado a creare non vadano a modificare il significato della tabella originale, cioè non devono essere perse o aggiunte informazioni.
 
+> Decomposizione con perdita, e quindi eseguita scorrettamente:
+> ![](/img/decomposizione_perdita.png)
+>
+> In poche parole se andiamo a fare il `join` delle due tabelle si creano dei dati che non sono presenti nella tabella origilale, quindi abbiamo aggiunto informazioni.
+>
+> Per correggere la decomposizione la eseguiamo sull'attributo `Impiegato`:
+> ![](/img/decomposizione_corretta.png)
+>
+> Così che, anche logicamente, possiamo dire che:
+> * L'`impiegato` ha una `sede`
+> * L'`impiegato` lavora ad un `progetto`
 
 [Torna all'indice](#indice)
 
