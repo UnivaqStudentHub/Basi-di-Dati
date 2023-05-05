@@ -100,6 +100,18 @@ Uno schema di relazione è in **2FN** se:
 > Essendo che la `Città` in poche parola reppresenta **dove è locato** il `Magazzino` lo possiamo togliere dalla tabella e creare una nuova tabella come qui di seguito:
 > ![](img/2fn_vero.png)
 
+### Terza forma normale (3FN)
+Uno schema di relazione è in **3FN** se:
+* è in **seconda forma normale (2FN)**
+* ogni [attributo non primo](#chiavi-e-attributi) **dipende solo dalle chiavi**
+
+### Riassunto
+* **1NF**: ogni attributo non primo dipende `dalla chiave`
+*  **2NF**: ogni attributo non primo dipende `da tutta la chiave`
+* 3NF: ogni attributo non primo dipende `solo dalla chiave`
+
+
+
 
 ## Decomposizione
 La decomposizione deve avvenire sempre in modo tale che le nuove tabella che vado a creare non vadano a modificare il significato della tabella originale, cioè non devono essere perse o aggiunte informazioni.
