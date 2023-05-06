@@ -135,6 +135,14 @@ La decomposizione deve avvenire sempre in modo tale che le nuove tabella che vad
 > * L'`impiegato` ha una `sede`
 > * L'`impiegato` lavora ad un `progetto`
 
+
+## Link Utili
+* [Altre slides normalizzazione](http://www.prof.accarino.altervista.org/DataBase/Normalizzazione.pdf)
+* [Definizione e Differenza tra Prima, Seconda, Terza Forma Normale](https://vitolavecchia.altervista.org/definizione-e-differenza-tra-prima-seconda-terza-forma-normale/)
+
+
+---
+
 [Torna all'indice](#indice)
 
 [Torna alla Home](/README.md)

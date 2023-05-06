@@ -91,7 +91,7 @@ Cambia il nome della variabile associata all'attributo ma non il nome dell'attri
 > ![](/img/calcolo_rel_ridenominazione.png)
 
 
-
+---
 
 [Torna all'indice](#indice)
 

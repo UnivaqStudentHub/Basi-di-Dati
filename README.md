@@ -75,6 +75,6 @@ dati
     - Il DBMS dispone di funzionalità per il ripristino della base di dait in caso di malfunzionamento o guasti durante l'esecuzione di [transizioni](#transazioni)
 * **Sicurezza**
     - Prevenzione dall’accesso ai dati ad utenti non autorizzati
-
+---
 
 [Torna all'indice](#indice)

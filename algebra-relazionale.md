@@ -229,7 +229,7 @@ Sintassi:
 
 
 
-
+---
 
 
 [Torna all'indice](#indice)
