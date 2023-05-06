@@ -105,10 +105,17 @@ Uno schema di relazione è in **3FN** se:
 * è in **seconda forma normale (2FN)**
 * ogni [attributo non primo](#chiavi-e-attributi) **dipende solo dalle chiavi**
 
+### Forma Normale di Boyce e Codd
+Uno schema è in forma normale di **Boyce e Codd** se:
+* per ogni dipendenza funzionale `Y-> Z` in R(X) si ha che `Y` contiene una chiave di R(X), quindi `Y` è una superchiave
+
+
+Una relazione con solo due attributi è in **forma normale di Boyce e Codd**
+
 ### Riassunto
 * **1NF**: ogni attributo non primo dipende `dalla chiave`
 *  **2NF**: ogni attributo non primo dipende `da tutta la chiave`
-* 3NF: ogni attributo non primo dipende `solo dalla chiave`
+* **3NF**: ogni attributo non primo dipende `solo dalla chiave`
 
 
 
