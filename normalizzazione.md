@@ -88,6 +88,7 @@ Si legge:
 Uno schema di relazione è in **2FN** se:
 * è in **prima forma normale (1FN)**
 * Ogni [attributo non primo](#chiavi-e-attributi) dipende completamente da ogni chiave di R(X)
+* **tutti gli attributi non-chiave dipendono dall’intera chiave, cioè non possiede attributi che dipendono soltanto da una parte della chiave**
 
 > Esempio:
 > ![](/img/2fn.png)
@@ -104,6 +105,9 @@ Uno schema di relazione è in **2FN** se:
 Uno schema di relazione è in **3FN** se:
 * è in **seconda forma normale (2FN)**
 * ogni [attributo non primo](#chiavi-e-attributi) **dipende solo dalle chiavi**
+
+* **La terza forma normale stabilisce che non esistano dipendenze tra le colonne di una tabella se non basate sulla chiave primaria**
+
 
 ### Forma Normale di Boyce e Codd
 Uno schema è in forma normale di **Boyce e Codd** se:

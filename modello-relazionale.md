@@ -131,7 +131,7 @@ tabella
 2 importanti definizioni:
 
 * **Tabella riferita**
-    - Qui è presente la `chiave primaria`, questa tabella viene "indicara" tramite chiave esterna nelle **tabelle referenti**
+    - Qui è presente la `chiave primaria`, questa tabella viene "indicata" tramite chiave esterna nelle **tabelle referenti**
 * **Tabella referente**
     - Qui è presente la `chiave esterna` che va a "indicare" la tabella principale
 
